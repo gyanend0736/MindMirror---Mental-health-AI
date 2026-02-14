@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { IoCloseSharp } from "react-icons/io5";
 
-const API_URL = 'http://localhost:5000/api/chat'; // IMPORTANT: Use your Flask URL
+const API_URL = 'https://mindmirror-mental-health-ai-5.onrender.com/api/chat' || 'http://localhost:5000/api/chat'; // IMPORTANT: Use your Flask URL
 
 const ChatWindow = ({ onClose }) => {
   const [messages, setMessages] = useState([

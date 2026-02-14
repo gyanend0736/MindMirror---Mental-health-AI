@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // The Flask API endpoint
-const API_URL = 'http://localhost:5000/api/detect-emotion';
+const API_URL = 'https://mindmirror-mental-health-ai-5.onrender.com/api/detect-emotion' || 'http://localhost:5000/api/detect-emotion';
 
 // --- Local Storage Helper Functions ---
 
