@@ -1,0 +1,117 @@
+.home-page{
+    background: linear-gradient( rgb(30, 19, 35), rgb(53, 37, 71));
+    height: 100vh;
+    color: white;
+    display: flex;
+}
+.right-side-home {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  
+  color: #ffffff;
+  max-width: 600px;
+}
+
+.right-side-home h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.right-side-home p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #b9b9b9;
+}
+
+.right-side-home button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.right-side-home button:hover {
+  background-color: #e2e2e2;
+}
+
+.about-section {
+  padding: 5rem;
+  gap: 2rem;
+  border-radius: 8px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-section {
+  background: linear-gradient( rgb(30, 19, 35), rgb(53, 37, 71));
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 5rem;
+  }
+}
+.features-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  /* z-index: 2; */
+}
+
+.features-column {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.feature-item {
+  background: 	#472B87;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+}
+.feature-item:hover{
+  transform: scale(1.02);
+  background-color: #4C2A85; /* slightly brighter on hover */
+  transition: all 0.3s ease;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
+  }
+  to {
+    opacity: 1;
+   transform: translateX(0px);
+    clip-path: inset(0 0 0 0);
+  }
+  
+}
+h2,p,h1 {
+  animation: appear  ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 35%;
+}

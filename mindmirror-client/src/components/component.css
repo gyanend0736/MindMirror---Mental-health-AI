@@ -1,0 +1,26 @@
+Header{
+    background: linear-gradient(rgb(26, 18, 35), rgb(30, 19, 35));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 2rem;
+    color: white;
+}
+.nav-option {
+    margin: 0 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+.header-signbtn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}

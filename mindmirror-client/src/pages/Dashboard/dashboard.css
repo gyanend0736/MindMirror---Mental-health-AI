@@ -1,0 +1,143 @@
+/* --- Global Reset/Base Styles (If not already present in your main app.css) --- */
+body {
+    background-color: #d5e5ff; 
+}
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #cfe0ff; 
+    height: 70vh;
+}
+
+/* --- Main Header --- */
+.dashboard-header {
+    font-size: 3rem;
+    color: #1e3a8a; /* Dark blue text */
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* --- Layout Grid --- */
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Main chart (3/4) and list (1/4) */
+    gap: 20px;
+}
+
+/* --- Card Styles --- */
+.dashboard-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.sub-text {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* --- Chart Styles --- */
+.chart-container {
+    padding: 20px;
+    background-color: #f9f9ff;
+    border-radius: 8px;
+}
+
+.chart-bar-row {
+    margin-bottom: 15px;
+}
+
+.chart-bar-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.chart-bar-wrapper {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+.chart-bar {
+    height: 20px;
+    border-radius: 4px;
+    transition: width 1s ease-in-out;
+}
+
+/* --- Primary Trend / Advice Text --- */
+.advice-text {
+    background-color: #f9f9ff;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #e0eaff;
+    line-height: 1.5;
+    color: #444;
+}
+
+/* --- Recent Entries List --- */
+.recent-entry-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+.recent-entry-item:last-child {
+    border-bottom: none;
+}
+
+.entry-emotion-date {
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.entry-text-preview {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* --- Summary Button --- */
+.summary-button {
+    padding: 0.7rem 1.5rem;
+    background: #6a5acd; /* Purple */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%; /* Make button full width in the card */
+}
+
+.summary-button:disabled {
+    background: #9e95e7; 
+    cursor: not-allowed;
+}
+
+/* --- AI Insight Box --- */
+.ai-insight-box {
+    margin-top: 1rem;
+}
+
+.ai-insight-title {
+    font-weight: bold;
+    color: #6a5acd;
+}
+
+/* --- Emotion-Specific Colors (Handled by Inline Styles in JSX for dynamic use) --- */
+/* The JSX will inject the background-color and text color using getEmotionColor */
